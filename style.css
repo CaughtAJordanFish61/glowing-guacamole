@@ -1,0 +1,137 @@
+
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #171326;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Top heading area */
+header {
+    background-color: #251b3d;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+header h1 {
+    color: #ff9a38;
+    margin-bottom: 6px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #ff9a38;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #21162f;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 24px 18px;
+}
+
+.intro {
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+h2, h3 {
+    color: #ffb15c;
+}
+
+/* Costume cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #28213c;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 235px;
+    padding-bottom: 14px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #36294f;
+}
+
+.card h2,
+.card h3,
+.card p {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+/* Larger image on the About page */
+.content-image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 18px auto;
+    border-radius: 12px;
+}
+
+/* Links and lists */
+a {
+    color: #ffc078;
+}
+
+nav a {
+    color: #21162f;
+}
+
+ul, ol {
+    padding-left: 24px;
+}
+
+/* Bottom area */
+footer {
+    background-color: #251b3d;
+    text-align: center;
+    padding: 18px;
+    margin-top: 24px;
+}
+
+/* Make the website fit smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        padding: 5px 7px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+}
